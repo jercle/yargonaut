@@ -2,6 +2,8 @@
 
 > Decorate yargs content with chalk styles and figlet fonts
 
+Forked from [Yargonaut](https://github.com/nexdrew/yargonaut)
+
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![npm version](https://img.shields.io/npm/v/yargonaut.svg)](https://npmjs.org/package/yargonaut)
 ![yargs + chalk + figlet = yes please](https://img.shields.io/badge/yargs%20%2B%20chalk%20%2B%20figlet-yes%2C%20please!-ff69b4.svg)
@@ -26,8 +28,8 @@ npm install --save yargonaut yargs
 ```
 
 ```js
-var yargonaut = require('yargonaut') // yargonaut first!
-var yargs = require('yargs') // then yargs
+const yargonaut = require('yargonaut') // yargonaut first!
+const yargs = require('yargs') // then yargs
 ```
 
 yargonaut assumes you have yargs installed independently.
@@ -47,7 +49,7 @@ require('yargonaut')
   .style('blue')
   .font('Small Slant') // that's it!
 
-var argv = require('yargs')
+const argv = require('yargs')
   .command('add', 'Add item to cart')
   .command('rm', 'Remove item from cart')
   .option('p', {
@@ -99,7 +101,7 @@ $ node order.js
    __  ____         _                               _            __                                    __  _
   /  |/  (_)__ ___ (_)__  ___ _  _______ ___ ___ __(_)______ ___/ / ___ ________ ___ ____ _  ___ ___  / /_(_)
  / /|_/ / (_-<(_-</ / _ \/ _ `/ / __/ -_) _ `/ // / / __/ -_) _  / / _ `/ __/ _ `/ // /  ' \/ -_) _ \/ __/
-/_/  /_/_/___/___/_/_//_/\_, / /_/  \__/\_, /\_,_/_/_/  \__/\_,_/  \_,_/_/  \_, /\_,_/_/_/_/\__/_//_/\__(_)  
+/_/  /_/_/___/___/_/_//_/\_, / /_/  \__/\_, /\_,_/_/_/  \__/\_,_/  \_,_/_/  \_, /\_,_/_/_/_/\__/_//_/\__(_)
                         /___/            /_/                               /___/
    p
 ```
@@ -113,7 +115,7 @@ require('yargonaut')
   .errors('Calvin S')
   .errorsStyle('red')
 
-var argv = require('yargs')
+const argv = require('yargs')
   .command('add', 'Add item to cart')
   .command('rm', 'Remove item from cart')
   .option('p', {
@@ -190,7 +192,7 @@ require('yargonaut')
   .font('DOS Rebel', 'Invalid values:')
   .style('yellow', 'Invalid values:')
 
-var argv = require('yargs')
+const argv = require('yargs')
   .option('s', {
     alias: 'size',
     describe: 'Desired product size',
@@ -224,7 +226,7 @@ require('yargonaut')
   .errors('ANSI Shadow')
   .transformWholeString('Unknown argument: %s')
 
-var argv = require('yargs')
+const argv = require('yargs')
   .showHelpOnFail(false)
   .strict()
   .argv
@@ -387,4 +389,4 @@ Test print every supported figlet font to stdout using `console.log()`.
 
 # License
 
-[Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0) © Andrew Goode
+[Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0) © [Andrew Goode](https://github.com/nexdrew/yargonaut)

@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nexdrew/yargonaut.git"
+    "url": "git+https://github.com/jercle/yargonaut.git"
   },
   "standard": {
     "ignore": [],
@@ -31,14 +31,14 @@
     "cli"
   ],
   "author": {
-    "name": "Andrew Goode",
-    "url": "https://github.com/nexdrew"
+    "name": "Evan Colwell",
+    "url": "https://github.com/jercle"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nexdrew/yargonaut/issues"
+    "url": "https://github.com/jercle/yargonaut/issues"
   },
-  "homepage": "https://github.com/nexdrew/yargonaut#readme",
+  "homepage": "https://github.com/jercle/yargonaut#readme",
   "devDependencies": {
     "standard": "^17.0.0"
   },
